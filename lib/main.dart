@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("First Mobile Flutter"),
+          title: Text("Cashy"),
           backgroundColor: Colors.grey,
           actions: <Widget>[
             IconButton(onPressed: () {}, icon: Icon(Icons.mail))
