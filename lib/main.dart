@@ -19,12 +19,22 @@ class MyApp extends StatelessWidget {
           title: Text("Cashy"),
           backgroundColor: Colors.green,
           actions: <Widget>[
-            IconButton(onPressed: () {}, icon: Icon(Icons.mail))
+            IconButton(onPressed: () {}, icon: Icon(Icons.account_circle))
           ],
         ),
         body: SafeArea(
-          child: Image(image: AssetImage('assets/images/ic_payment.png')),
-        ),
+            child: Container(
+          child: Column(
+            children: <Widget>[
+              Image(
+                image: AssetImage('assets/images/ic_payment.png'),
+                height: 200,
+              ),
+              Text("Rich Together"),
+              Text("Save your money little bit and we will have to be rich.")
+            ],
+          ),
+        )),
       ),
     );
   }
