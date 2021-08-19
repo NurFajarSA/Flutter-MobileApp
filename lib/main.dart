@@ -17,13 +17,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Cashy"),
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.green,
           actions: <Widget>[
             IconButton(onPressed: () {}, icon: Icon(Icons.mail))
           ],
         ),
         body: SafeArea(
-          child: Text("Flutter"),
+          child: Image(image: AssetImage('assets/images/ic_payment.png')),
         ),
       ),
     );
