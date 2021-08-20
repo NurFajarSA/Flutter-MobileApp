@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Container(
           margin:
-              EdgeInsets.only(left: 50.0, top: 0.0, right: 0.0, bottom: 0.0),
+              EdgeInsets.only(left: 25.0, top: 0.0, right: 25.0, bottom: 0.0),
           padding: EdgeInsets.only(left: 0, top: 30.0, right: 0, bottom: 0),
           child: Column(
             children: <Widget>[
@@ -34,13 +34,15 @@ class MyApp extends StatelessWidget {
                 image: AssetImage('assets/images/ic_payment.png'),
                 height: 200,
               ),
-              Text(
-                "Rich Together",
-                style: mainHeader,
+              Padding(
+                padding: EdgeInsets.only(top: 20.0, bottom: 5.0),
+                child: Text("Rich Together",
+                    style: mainHeader, textAlign: TextAlign.center),
               ),
               Text(
-                "Save your money little bit and we will have to be rich.",
+                "Save your money little bit and \nwe will have to be rich.",
                 style: subHeader,
+                textAlign: TextAlign.center,
               )
             ],
           ),
